@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;}
+
+main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top{
+    width: 100%;
+    height: 40vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-a{
+    width: 50%;
+    /* height: 100vh; */
+    margin: auto;
+    background-color: #1B1B3A;
+    padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top-a h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    margin-top: 0.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.top-a p{
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lower{
+    width: 100%;
+    height: auto;
+}
+
+.catgBtnList{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.catgBtn button{
+background-color: #1B1B3A;
+color: white;
+padding: 1rem 2rem;
+margin: 2rem 1rem;
+border: none;
+border: 1px solid #183153;
+}
+
+
+.middle{
+    width: 30%;
+    margin: auto;
+
+}
+.animesLists{
+    /* width: 30%; */
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border: 2px solid #183153;
+    background-color: #1b1b3a52;
+    color: #1B1B3A;
+    margin-bottom: 1rem;
+}
+
+.animeName{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.animeRating{
+    font-weight: 500;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    /* display: grid; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.animeRating i{
+    color: yellow;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1B1B3A;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin: auto;
+    /* margin: auto; */
+    /* display: grid; */
+    /* grid-template-rows: 1fr; */
+    /* place-content: center; */
+}
+
+
+
+
+
+.bottom{
+    width: 50%;
+    /* height: 100vh; */
+    margin: auto;
+    background-color: #1B1B3A;
+    padding: 1rem;
+}
+
+.bottom h1{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.bottom p{
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.bottom h2{
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width : 468px){
+
+    .top-a{
+        width: 90%;
+    }
+
+    .bottom{
+        width: 90%;
+    }
+
+    .catgBtn button{
+        padding: 0.6rem 0.8rem;
+        margin: 1rem 0.5rem;
+        }
+
+        .middle{
+            width: 80%;
+            /* margin: auto; */
+            margin-top: none;
+        
+        }
+
+        .top{
+            /* width: 100%; */
+            height: 35vh;
+        }
 }
