@@ -74,14 +74,14 @@ function App() {
     }
 
   return (
-    <main>
-      <div className="top">
+    <>
+      <div className="container">
 
         {/* top header and introduction */}
-          <div className='top-a'>
+          <header className='header'>
             <h1> my anime list </h1>
             <p>Do you want to watch anime? Here, is my recommended lists</p>
-          </div>
+          </header>
         
         {/* anime categories buttons */}
         <ul className='catgBtnList'>
@@ -95,9 +95,7 @@ function App() {
             })
           } 
         </ul>
-      </div>
-
-    <div className="lower">
+    
       <div className='middle'>{
         animeRecommendationLists[animeList].map(function(animes){
           return (
@@ -112,13 +110,13 @@ function App() {
       }
       </div>
 
-      <div className="bottom">
+      <footer className="footer">
         <h1>about</h1>
         <p>if you love watching anime then you must watch these recommended lists of mine</p>
-        <h2>made with <i class="fa-solid fa-heart"></i> by sobit</h2>
-      </div>
-    </div>
-    </main>
+        <h2>made with <i class="fa-solid fa-heart"></i> by <a href="https://sobit-prasad.netlify.app">Sobit</a></h2>
+      </footer>
+  </div>
+    </>
   );
 }
 

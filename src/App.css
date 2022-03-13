@@ -3,28 +3,24 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Fredoka', sans-serif;}
+    font-family: 'Fredoka', sans-serif;
+}
 
-main{
-    width: 100%;
+.container{
+    width: 60%;
     height: 100vh;
+    margin: auto;
     /* background-color: red; */
 }
-
-.top{
-    width: 100%;
-    height: 40vh;
-}
-
-.top-a{
-    width: 50%;
-    /* height: 100vh; */
-    margin: auto;
+.header{
     background-color: #1B1B3A;
-    padding: 1rem;
+    padding: 1.5rem 0rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
 }
 
-.top-a h1{
+
+.header h1{
     font-weight: 700;
     font-size: 1.8rem;
     text-align: center;
@@ -32,16 +28,13 @@ main{
     margin-top: 0.3rem;
 }
 
-.top-a p{
+.header p{
     color: white;
     text-align: center;
     font-size: 0.8rem;
 }
 
-.lower{
-    width: 100%;
-    height: auto;
-}
+
 
 .catgBtnList{
     list-style: none;
@@ -58,22 +51,27 @@ padding: 1rem 2rem;
 margin: 2rem 1rem;
 border: none;
 border: 1px solid #183153;
+border-radius: 0.5rem;
+/* border: 2px solid yellow; */
+/* border-bottom: 6px solid yellow; */
 }
 
 
 .middle{
-    width: 30%;
-    margin: auto;
-
+    width: 60%;
+    margin: auto;  
 }
+
 .animesLists{
     /* width: 30%; */
+    border-radius: 0.5rem;
     display : flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 0.5rem;
-    border: 2px solid #183153;
+    border: 2px solid #1B1B3A;
+    border-bottom: 5px solid #1B1B3A;
     background-color: #1b1b3a52;
     color: #1B1B3A;
     margin-bottom: 1rem;
@@ -88,89 +86,88 @@ border: 1px solid #183153;
     font-weight: 500;
     margin-top: 0.2rem;
     font-size: 1rem;
-    /* display: grid; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .animeRating i{
     color: yellow;
-    width: 1rem;
-    height: 1rem;
     background-color: #1B1B3A;
-    padding: 0.3rem;
+    padding: 0.2rem;
     text-align: center;
     border-radius: 0.3rem;
     text-align: center;
-    margin: auto;
     /* margin: auto; */
-    /* display: grid; */
-    /* grid-template-rows: 1fr; */
-    /* place-content: center; */
 }
 
 
-
-
-
-.bottom{
-    width: 50%;
-    /* height: 100vh; */
-    margin: auto;
+.footer{
     background-color: #1B1B3A;
-    padding: 1rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
-.bottom h1{
+.footer h1{
     color: white;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-.bottom p{
+.footer p{
     color: white;
     text-align: center;
     font-size: 0.8rem;
     margin-top: 0.3rem;
 }
 
-.bottom h2{
-    font-size: 1rem;
+.footer h2{
+    font-size: 0.8rem;
     color: white;
     margin-top: 0.3rem;
     text-align: center;
 }
+.footer h2 a{
+    color: white;
+}
+.footer h2 a:hover{
+    color: yellow;
+}
 
+.footer h2 i{
+    color: yellow;
+}
 
 
 
 /* MEDIA QUERY */
 @media (max-width : 468px){
 
-    .top-a{
-        width: 90%;
+    .container{
+        width: 95%;
     }
 
-    .bottom{
-        width: 90%;
+    .header{
+        padding: 1rem 0rem;
+    }
+    
+    .catgBtn button{
+        padding: 0.8rem;
+        margin: 1.4rem 0.5rem;
+    }
+
+    .middle{
+        width: 65%;
+    }
+}
+
+@media (min-width : 469px) and (max-width : 776px){
+    .container{
+        width: 80%;
     }
 
     .catgBtn button{
-        padding: 0.6rem 0.8rem;
-        margin: 1rem 0.5rem;
-        }
-
-        .middle{
-            width: 80%;
-            /* margin: auto; */
-            margin-top: none;
-        
-        }
-
-        .top{
-            /* width: 100%; */
-            height: 35vh;
+        padding: 1rem 1.5rem;
+        margin: 2rem 0.6rem;
         }
 }
