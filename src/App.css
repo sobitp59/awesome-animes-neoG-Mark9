@@ -14,7 +14,7 @@
 }
 
 .container{
-    width: 60%;
+    width: 60vw;
     height: 100vh;
     margin: auto;
     /* background-color: red; */
@@ -149,7 +149,7 @@ border-radius: 0.5rem;
 @media (max-width : 468px){
 
     .container{
-        width: 95%;
+        width: 95vw;
     }
 
     .header{
@@ -162,13 +162,13 @@ border-radius: 0.5rem;
     }
 
     .middle{
-        width: 65%;
+        width: 65vw;
     }
 }
 
 @media (min-width : 469px) and (max-width : 776px){
     .container{
-        width: 80%;
+        width: 80vw;
     }
 
     .catgBtn button{
