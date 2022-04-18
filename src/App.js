@@ -8,14 +8,17 @@ const animeRecommendationLists = {
     {
       name : "One Piece",
       rating : "8.6/10",
+      image : "https://wallpaperaccess.com/full/17350.jpg"
     },
     { 
       name : "Hunter X Hunter",
       rating : "8.9/10",
+      image : "https://wallpaperaccess.com/full/4156368.jpg"
     },
     {
       name : "Spice and Wolf",
-      rating : "7.7/10",
+      rating : "8.7/10",
+      image : "https://wallpapercave.com/wp/wp1970352.jpg"
     }
   ],
 
@@ -23,15 +26,18 @@ const animeRecommendationLists = {
   "action" : [
     {
       name : "Darker than Black",
-      rating : "7.6/10",
+      rating : "8.4/10",
+      image : "https://wallpaperaccess.com/full/105932.jpg"
     },
     {
       name : "Trigun",
-      rating : "5.6/10",
+      rating : "9.1/10",
+      image : "https://wallpaperaccess.com/full/530239.jpg"
     },
     {
       name : "Kino’s Journey",
-      rating : "7.8/10",
+      rating : "8.8/10",
+      image : "https://wallpaperaccess.com/full/2382827.jpg"
     }
   ],
 
@@ -39,15 +45,18 @@ const animeRecommendationLists = {
   "romance" : [
     {
       name : "Special A",
-      rating : "6.7/10",
+      rating : "7.7/10",
+      image : "https://wallpapercave.com/wp/wp3603815.jpg"
     },
     {
       name : "Lovely Complex",
-      rating : "9.5/10",
+      rating : "8.5/10",
+      image : "https://c4.wallpaperflare.com/wallpaper/87/613/261/anime-lovely-complex-atsushi-%C5%8Ctani-risa-koizumi-hd-wallpaper-preview.jpg"
     },
     {
       name : "Kare Kano",
       rating : "7.9/10",
+      image : "https://wallpapercave.com/wp/wp8154617.jpg"
     }
   ]
 }
@@ -101,6 +110,11 @@ function App() {
           return (
             <>
             <div key={animes} className="animesLists">
+
+              <div className="anime-images">
+                <img src={animes.image} alt={animes.name} />
+              </div>
+
               <div className='animeName'>{animes.name}</div> 
               <div className='animeRating'><i class="fa-solid fa-star"></i> {animes.rating}</div>
             </div>
