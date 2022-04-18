@@ -6,9 +6,9 @@ const animeRecommendationLists = {
   // adventure anime list
   "adventure" : [
     {
-      name : "One Piece",
+      name : "Demon Slayer",
       rating : "8.6/10",
-      image : "https://wallpaperaccess.com/full/17350.jpg"
+      image : "https://images4.alphacoders.com/102/thumbbig-1028306.webp"
     },
     { 
       name : "Hunter X Hunter",
@@ -105,24 +105,22 @@ function App() {
           } 
         </ul>
     
-      <div className='middle'>{
+      <ul className='middle'>{
         animeRecommendationLists[animeList].map(function(animes){
           return (
             <>
-            <div key={animes} className="animesLists">
+            <li key={animes} className="animesLists">
 
-              <div className="anime-images">
-                <img src={animes.image} alt={animes.name} />
-              </div>
-
+              <img className="anime-image" src={animes.image} alt={animes.name}/>
               <div className='animeName'>{animes.name}</div> 
               <div className='animeRating'><i class="fa-solid fa-star"></i> {animes.rating}</div>
-            </div>
+          
+            </li>
             </>
           )
         })
       }
-      </div>
+      </ul>
 
       <footer className="footer">
         <h1>about</h1>

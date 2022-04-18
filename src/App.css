@@ -10,7 +10,6 @@
     --primary-color : #112240;
     --secondary-color : #00ffb7;
     --anime-list-bg : #b3ffe954;
-
 }
 
 .container{
@@ -62,12 +61,21 @@ border-radius: 5rem;
 
 
 .middle{
+    list-style : none;
     width: 90%;
     margin: auto; 
     display : flex;
     flex-direction : column;
     justify-content : center;
     align-items : center; 
+}
+
+.anime-image{
+    width : 300px;
+    height : 400px;
+    object-fit : cover;
+    border-radius : 1rem;
+    margin : 1rem;
 }
 
 .animesLists{
@@ -180,14 +188,14 @@ border-radius: 5rem;
         margin: 1.4rem 0.5rem;
         }
 
-    
-
-    .anime-images img{
-        width : 200px;
-        height : 300px;
         
-        margin-top: 1.2rem;
-    }
+        .anime-image{
+            width : 250px;
+            height : 350px;
+            margin : 0.2rem;
+        }    
+
+
 }
 
 @media (min-width : 469px) and (max-width : 776px){
